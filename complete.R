@@ -1,4 +1,7 @@
-setwd("~/scratch/dsc/datasciencecoursera/")
+#!/usr/bin/Rscript --default-packages=methods,utils,stats
+#Jody Oliverson May 14, 2015 at 9:55 AM MDT
+
+
 
 complete <- function(directory, id=1:332) {
   if(grep("specdata", directory) == 1) {
@@ -20,14 +23,14 @@ complete <- function(directory, id=1:332) {
 
 
 
-source("complete.R")
+#source("complete.R")
 ##Test Cases
-complete("specdata", 1) 
+#complete("specdata", 1)
 ##
 #id nobs
 #1  1  117
 ##
-complete("specdata", c(2,4,8,10,12))
+#complete("specdata", c(2,4,8,10,12))
 ##
 #  id nobs
 #1  2 1041
@@ -36,7 +39,7 @@ complete("specdata", c(2,4,8,10,12))
 #4 10  148
 #5 12   96
 ##
-complete("specdata", 30:25)
+#complete("specdata", 30:25)
 ##
 #  id nobs
 #1 30  932
@@ -46,8 +49,9 @@ complete("specdata", 30:25)
 #5 26  586
 #6 25  463
 ##
-complete("specdata", 3)
+#complete("specdata", 3)
 ##
 #  id nobs
 #1  3  243
 ##
+

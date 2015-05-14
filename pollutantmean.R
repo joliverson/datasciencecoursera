@@ -1,4 +1,5 @@
-setwd("~/scratch/dsc/datasciencecoursera/")
+#!/usr/bin/Rscript --default-packages=methods,utils,stats
+#Jody Oliverson May 14, 2015 at 9:55 AM MDT
 
 pollutantmean <- function(directory, pollutant, id=1:332) {
   if(grep("specdata", directory) == 1) {
@@ -20,7 +21,8 @@ pollutantmean <- function(directory, pollutant, id=1:332) {
 
 
 ##Tests
-source("pollutantmean.R")
-pollutantmean("specdata", "sulfate", 1:10) #4.064128
-pollutantmean("specdata", "nitrate", 70:72) #1.706047
-pollutantmean("specdata", "nitrate", 23) #1.280833
+#source("pollutantmean.R")
+#pollutantmean("specdata", "sulfate", 1:10) #4.064128
+#pollutantmean("specdata", "nitrate", 70:72) #1.706047
+#pollutantmean("specdata", "nitrate", 23) #1.280833
+##                                                     
